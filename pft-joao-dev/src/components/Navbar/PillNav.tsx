@@ -9,7 +9,7 @@ export type PillNavItem = {
 };
 
 export interface PillNavProps {
-  logo: string;
+  logo?: string;
   logoAlt?: string;
   items: PillNavItem[];
   activeHref?: string;
@@ -157,7 +157,7 @@ const PillNav: React.FC<PillNavProps> = ({
     if (!tl) return;
     activeTweenRefs.current[i]?.kill();
     activeTweenRefs.current[i] = tl.tweenTo(tl.duration(), {
-      duration: 0.9,
+      duration: 0.6,
       ease,
       overwrite: "auto",
     });
@@ -168,7 +168,7 @@ const PillNav: React.FC<PillNavProps> = ({
     if (!tl) return;
     activeTweenRefs.current[i]?.kill();
     activeTweenRefs.current[i] = tl.tweenTo(0, {
-      duration: 0.9,
+      duration: 0.6,
       ease,
       overwrite: "auto",
     });
@@ -181,7 +181,7 @@ const PillNav: React.FC<PillNavProps> = ({
     gsap.set(img, { rotate: 0 });
     logoTweenRef.current = gsap.to(img, {
       rotate: 360,
-      duration: 0.2,
+      duration: 0.9,
       ease,
       overwrite: "auto",
     });

@@ -17,11 +17,11 @@ export default function Navbar() {
           { label: "CONTATO", href: "/contact" },
         ]}
         activeHref={pathname}
-        className="custom-nav font-family"
+        className="custom-nav font-family font-bold"
         ease="power2.easeOut"
-        baseColor="#2a2a2a"
+        baseColor="#ffffff"
         pillColor="#ffffff"
-        hoveredPillTextColor="#ffffff"
+        hoveredPillTextColor="#ff8800"
         pillTextColor="#000000"
       />
     </div>
