@@ -5,8 +5,8 @@ export default function Introduction() {
   return (
     <>
       <SpotlightCard
-        className="custom-spotlight-card bg-gray space-y-2"
-        spotlightColor="rgba(255, 196, 0, 0.404)"
+        className="custom-spotlight-card"
+        spotlightColor="rgba(250, 215, 99, 0.397)"
       >
         <TitleText
           text="Full-Stack Developer"
@@ -24,7 +24,7 @@ export default function Introduction() {
         <TitleText
           text="Prazer! Me chamo João Victor e sou um desenvolvedor full-stack apaixonado por criar soluções inovadoras e
           eficientes. Com experiência em diversas tecnologias, estou sempre em busca de novos desafios. Entre pixels e endpoints, eu construo ideias que viram produtos."
-          className="text-[20px] md:text-2xl font-normal font-family text-center text-white tracking-[-0.1px]"
+          className="text-[20px] md:text-2xl font-normal font-family text-center text-white tracking-[-0.1px] pt-2"
           delay={10}
           duration={0.2}
           ease="power3.out"
