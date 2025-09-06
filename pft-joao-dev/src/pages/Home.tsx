@@ -8,7 +8,7 @@ export default function Home() {
       <section className="relative isolate min-h-screen w-full overflow-hidden bg-tertiary pt-24">
         <div className="absolute inset-0 -z-10 ">
           <Squares
-            speed={0.2}
+            speed={0.4}
             squareSize={40}
             direction="left"
             borderColor="#ff8800"

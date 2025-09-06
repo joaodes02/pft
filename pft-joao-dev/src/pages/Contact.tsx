@@ -1,7 +1,21 @@
+import Squares from "../components/BgAnimation/Squares";
+
 export default function Contact() {
   return (
-    <div className="bg-quinary h-screen w-full pt-20">
-      <h1 className="text-center text-4xl font-family font-bold">contact</h1>
-    </div>
+    <section className="relative isolate min-h-screen w-full overflow-hidden bg-tertiary pt-24">
+      <div className="absolute inset-0 -z-10 ">
+        <Squares
+          speed={0.4}
+          squareSize={40}
+          direction="down"
+          borderColor="#ff8800"
+          hoverFillColor="#ffffff"
+        />
+      </div>
+
+      <div className="relative z-10 flex items-center justify-center">
+        <h1 className="text-white text-3xl">Contact</h1>
+      </div>
+    </section>
   );
 }
